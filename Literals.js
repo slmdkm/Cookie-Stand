@@ -1,7 +1,7 @@
 //Lab06 - Literals
 
 //Create object store and property/values
-var pikePlace ={
+var pikePlace = {
   location: "Pike Place",
   min:17,
   max:88,
@@ -120,7 +120,7 @@ var southCenter ={
 
 
 //Calculate sum(pikePlace.Randoms is MT array)
-var arraySum = function(Randoms){
+var pikePlaceSum = function(Randoms){
 var sum =0;
 for (var i=0; i<pikePlace.Randoms.length; i++){
   sum = sum + pikePlace.Randoms[i];
@@ -131,7 +131,7 @@ return sum;
 
 }
 //Call
-arraySum(pikePlace.Randoms);
+pikePlaceSum(pikePlace.Randoms);
 
 var arraySum = function(Randoms){
   var sum =0;
