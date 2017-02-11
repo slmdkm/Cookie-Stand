@@ -1,0 +1,93 @@
+
+body{
+  font-family: Helvetica, sans-serif;
+  color: white;
+  background-color:#919999;
+  background-image: url();
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+header{
+  font-family: 'Caveat Brush', cursive;
+  font-weight: ;
+  text-align: right;
+  color: white ;
+  height: 260px;
+  width: 100%;
+  display: block;
+  background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRml_nexjUbrirm95zG4btdD-GC0shOGXLky4V9O65i9fHJW7I4);
+  margin: 5px;
+}
+
+
+
+h1{
+  font-size: 48px;
+  color: white;
+  text-align: right;
+  margin-right: 50px;
+  line-height: 100px;
+
+
+
+}
+li{
+  display: inline;
+
+}
+.nav-lists{
+
+    text-align: right;
+    color: white;
+    float: left;
+    cursor: auto;
+
+  }
+  a {
+    padding: 8px 16px;
+    color: white;
+  }
+p{
+  text-align: center;
+}
+
+
+link{
+  font-family: ;
+  font-style: ;
+}
+
+h3{
+  font-family:
+  color: white;
+  text-align: right;
+  font-size: 33px;
+
+}
+
+h2{
+  font-family:
+  color: white;
+  text-align: center;
+}
+
+ul li {
+  text-align: center;
+  padding: 10px;
+}
+img {
+    display: block;
+    margin: 0px auto;
+    height: 100px;
+    width: 400px;
+  }
+
+data{
+  font-family: ;
+  color: #002A2A;
+
+}
+/*colors:
+#00A4BA(Turquoise) #FF8B31(Orange) #727272(Gray)*/
