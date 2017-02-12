@@ -1,1 +1,46 @@
-//Style-guide CSS
+h1{
+  font-family: 'Caveat Brush',cursive;
+  color:#0D4D4D;
+}
+h2{
+  font-family: 'Caveat Brush',cursive;
+  color:#669999;
+}
+
+h3{
+  font-family: 'Caveat Brush',cursive;
+  color:#669999;
+}
+
+
+#one{
+  background-color: #919999;
+  color: white;
+  width: 100px;
+  display: inline-block;
+}
+#two{
+  background-color: #669999;
+  color: white;
+  width: 100px;
+  display: inline-block;
+
+}
+#three{
+  background-color: #407F7F;
+  color: white;
+  width: 100px;
+  display: inline-block;
+}
+#four{
+  background-color: #0D4D4D;
+  color: white;
+  width: 100px;
+  display: inline-block;
+}
+#five{
+  background-color: #003333;
+  color: white;
+  width: 100px;
+  display: inline-block;
+}
