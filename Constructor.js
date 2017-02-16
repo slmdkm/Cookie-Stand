@@ -16,7 +16,7 @@ var bellevueSuare = stores.push (new CookieStoreConstructor('Bellevue Square',20
 var alki = stores.push(new CookieStoreConstructor('Alki', 3, 24, 2.6,'alkiRow'));
 
 
-
+//Concstructor Function
 function CookieStoreConstructor(location, min, max, avg, hours, storeRow) {
   this.location = location;
   this.min = min;
@@ -37,22 +37,22 @@ CookieStoreConstructor.prototype.getRandomCustomer = function(){
 CookieStoreConstructor.prototype.getHourlySales = function (){
   for (var i =0; i< hours.length; i++){
     var rand = Math.floor(this.getRandomCustomer() * this.avg);
-    this.hourlySales.push(rand);
-    this.totalSales += rand;
+    this.hourlySales.push(rand);//this is tabulating the hourly numbers and pushing them into the array
+    this.totalSales += rand;//this adding all the hourly numbers into one total
   }
 };
 //Prototype is: render equaling the function.
   CookieStoreConstructor.prototype.render = function(){
-    var storeSection = document.getElementById('stores');
+    var storeSection = document.getElementById('stores');//table id = stores from HTML
     var row = document.createElement('tr');//var row - make a new table row
     var td = document.createElement('td');//var td - make a new table cell
-    td.innerHTML = this.location;
+    td.innerHTML = this.location;//all the info for this particular store is now appending to table row
     row.appendChild(td);
 
 //innerHTML -adding or removing content from DOM Tree (2nd is Dom Manipulation)
 
     for (var i =0; i< this.hourlySales.length; i++){
-      var tdHourly = document.createElement('td');//Create element td node, store in a var
+      var tdHourly =   document.createElement('td');//Create element td node, store in a var
       tdHourly.innerHTML = this.hourlySales[i];
       row.appendChild(tdHourly);//Append tdHourly to the row.
     }
