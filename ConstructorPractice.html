@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="ConstructorPractice.css">
+  </head>
+  <body>
+    <main>
+      <h3>Store Sales Generator</h3>
+
+      <form id="form">
+        <fieldset>
+          <legend>Pat's Salmon Cookies</legend>
+
+          <!--make a block-level input  -->
+          <!-- <div> -->
+            <label for="location">Location:</label>
+            <input type="text" name="name" required>
+          <!-- </div> -->
+
+          <!--everything else in the form will be inline  -->
+          <label for="min">Min. Customer:</label>
+          <input type="number" name="number" min="0" required>
+
+          <label for="max">Max. Customer:</label>
+          <input type="number" name="number" min="0" required>
+
+          <label for="avg">Avg Sales:</label>
+          <input type="number" name="number" min="0" required>
+
+          <input type="submit" value="Add Store">
+        </fieldset>
+      </form>
+
+      <table id="table">
+          <thead>
+            <tr>
+              <th>Store</th>
+              <th>10AM</th>
+              <th>11AM</th>
+              <th>12PM</th>
+              <th>1PM</th>
+              <th>2PM</th>
+              <th>3PM</th>
+              <th>4PM</th>
+              <th>5PM</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+
+          <tbody id="table-body">
+
+          </tbody>
+
+          <tfoot>
+
+          </tfoot>
+      </table>
+
+      <!-- <button id ="fun-button">Push for fun!</button> -->
+    </main>
+
+    <script type="text/javascript" src="ConstructorPractice.js"></script>
+  </body>
+</html>

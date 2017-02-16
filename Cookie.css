@@ -54,8 +54,7 @@ li{
     padding: 8px 16px;
     color: white;
   }
-p{
-  text-align: center;
+
 }
 
 
@@ -65,7 +64,7 @@ link{
 }
 
 h3{
-  font-family:
+  font-family:'Caveat Brush', cursive;
   color: white;
   text-align: right;
   font-size: 33px;
@@ -73,7 +72,7 @@ h3{
 }
 
 h2{
-  font-family:
+  font-family:'Caveat Brush', cursive;
   color: white;
   text-align: center;
 }
@@ -87,12 +86,93 @@ ul li {
 img {
     display: block;
     margin: 0px auto;
-    height: 100px;
+
     width: 400px;
   }
+  main{
+    margin:auto;
+  }
+div{
+  align: center;
 
+}
+#history{
+  align: center;
+  width: 600px;
+  /*display: inline-block;*/
+  padding: 10px;
+  background-color: #002A2A;
+
+}
+#familypic{
+
+  ;
+  /*float:left;*/
+  text-align: center;
+
+
+}
+p{
+  text-align: center;
+}
+#fishiespic{
+  display: block;
+  align: center;
+  margin-left: 55px;
+  height:150px;
+  width: 150px;
+  margin-right: 200px;
+}
+#shirtpic{
+  display: block;
+  margin-left: 20px;
+  height: 150px;
+  width: 150px;
+}
+#locationandhours{
+  display: block;
+  margin: 50px 0px;
+  align: center;
+
+
+}
+div{
+  display: block;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 10px;
+  background-color: #003333;
+  flex:column;
+}
 data{
   font-family: ;
   color: #002A2A;
 
+}
+table{
+  font-family: Avenir;
+  margin-top: 25px;
+  border-spacing: 5px;
+}
+thead{
+  font-weight: : bold;
+}
+td{
+  border: 1px solid black
+}
+#inputForm{
+  margin: 0;
+  font-size: 16px
+}
+section{
+  align: left;
+}
+
+#sidebar{
+  /*display: flex;*/
+  /*position: fixed;*/
+  left: 0px;
+  /*background-color: #002A2A;*/
+  align-items: center;
+  /*justify-content: space-around;*/
 }
