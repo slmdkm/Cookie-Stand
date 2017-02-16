@@ -99,7 +99,7 @@ var clearFields = function(event){
   event.target.avgInput.value = null;
 };
 
-var formEl = document.getElementById("input Form");
+var formEl = document.getElementById("inputForm");
 formEl.addEventListener("submit", function(event) {
   event.preventDefault();
   var newStoreName = (event.target.storeLocal.value);
