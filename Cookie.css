@@ -19,11 +19,18 @@ header{
   display: block;
   background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRml_nexjUbrirm95zG4btdD-GC0shOGXLky4V9O65i9fHJW7I4);
   margin: 5px;
+  border-top:15px double #0D4D4D;
+  border-bottom: 5px solid #0D4D4D;
+
 }
+/*#fixed{*/
+  /*position: fixed;*/
+/*}*/
 
 
 
 h1{
+  font-family: 'Caveat Brush', cursive;
   font-size: 48px;
   color: white;
   text-align: right;
@@ -42,7 +49,7 @@ li{
 
 }
 .nav-lists{
-
+font-size: 20px;
     text-align: right;
     color: white;
     float: left;
@@ -53,8 +60,7 @@ li{
     padding: 8px 16px;
     color: white;
   }
-p{
-  text-align: center;
+
 }
 
 
@@ -64,7 +70,7 @@ link{
 }
 
 h3{
-  font-family:
+  font-family:'Caveat Brush', cursive;
   color: white;
   text-align: right;
   font-size: 33px;
@@ -72,13 +78,13 @@ h3{
 }
 
 h2{
-  font-family:
+  font-family:'Caveat Brush', cursive;
   color: white;
   text-align: center;
 }
 
 ul li {
-  text-align: left;
+  text-align: center;
   padding: 10px;
   display: block;
   list-style-type: inside, disc;
@@ -86,12 +92,103 @@ ul li {
 img {
     display: block;
     margin: 0px auto;
-    height: 100px;
+
     width: 400px;
   }
+  main{
+    margin-right: 250px;
+    margin-top: 50px;
+  }
+div{
+  align: center;
 
+}
+main{
+  padding: 10px 20px 20px 10px;
+  float: right;
+  width: 600px;
+}
+#history{
+  margin: auto;
+  align: center;
+  /*width: 600px;*/
+  /*display: inline-block;*/
+  padding: 10px;
+  background-color: #002A2A;
+
+}
+#familypic{
+
+  ;
+  /*float:left;*/
+  text-align: center;
+
+
+}
+p{
+  text-align: center;
+}
+#fishiespic{
+  display: block;
+  align: center;
+
+  height:150px;
+  width: 150px;
+  margin-top: 15px;
+padding-top: 15px;
+}
+#shirtpic{
+  display: block;
+  margin-left: 20px;
+  height: 150px;
+  width: 150px;
+}
+#locationandhours{
+  display: block;
+  margin: 50px 0px;
+  align: center;
+
+
+}
+div{
+  display: block;
+
+
+  padding: 10px;
+  background-color: #003333;
+  flex:column;
+}
 data{
   font-family: ;
   color: #002A2A;
 
+}
+table{
+  font-family: Avenir;
+  margin-top: 25px;
+  border-spacing: 5px;
+}
+thead{
+  font-weight: : bold;
+}
+td{
+  border: 1px solid black
+}
+#inputForm{
+  margin: 0;
+  font-size: 16px
+}
+section{
+  align: left;
+}
+
+#sidebar{
+  padding: inherit;
+  float: left;
+  width: 250px;
+  background-color: #0D4D4D;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 15px;
+  /*justify-content: space-around;*/
 }
