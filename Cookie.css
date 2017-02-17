@@ -19,7 +19,13 @@ header{
   display: block;
   background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRml_nexjUbrirm95zG4btdD-GC0shOGXLky4V9O65i9fHJW7I4);
   margin: 5px;
+  border-top:15px double #0D4D4D;
+  border-bottom: 5px solid #0D4D4D;
+
 }
+/*#fixed{*/
+  /*position: fixed;*/
+/*}*/
 
 
 
@@ -43,7 +49,7 @@ li{
 
 }
 .nav-lists{
-
+font-size: 20px;
     text-align: right;
     color: white;
     float: left;
@@ -78,7 +84,7 @@ h2{
 }
 
 ul li {
-  text-align: left;
+  text-align: center;
   padding: 10px;
   display: block;
   list-style-type: inside, disc;
@@ -90,15 +96,22 @@ img {
     width: 400px;
   }
   main{
-    margin:auto;
+    margin-right: 250px;
+    margin-top: 50px;
   }
 div{
   align: center;
 
 }
-#history{
-  align: center;
+main{
+  padding: 10px 20px 20px 10px;
+  float: right;
   width: 600px;
+}
+#history{
+  margin: auto;
+  align: center;
+  /*width: 600px;*/
   /*display: inline-block;*/
   padding: 10px;
   background-color: #002A2A;
@@ -118,10 +131,11 @@ p{
 #fishiespic{
   display: block;
   align: center;
-  margin-left: 55px;
+
   height:150px;
   width: 150px;
-  margin-right: 200px;
+  margin-top: 15px;
+padding-top: 15px;
 }
 #shirtpic{
   display: block;
@@ -138,8 +152,8 @@ p{
 }
 div{
   display: block;
-  margin-left: 300px;
-  margin-right: 300px;
+
+
   padding: 10px;
   background-color: #003333;
   flex:column;
@@ -169,10 +183,12 @@ section{
 }
 
 #sidebar{
-  /*display: flex;*/
-  /*position: fixed;*/
-  left: 0px;
-  /*background-color: #002A2A;*/
+  padding: inherit;
+  float: left;
+  width: 250px;
+  background-color: #0D4D4D;
   align-items: center;
+  margin-top: 60px;
+  margin-left: 15px;
   /*justify-content: space-around;*/
 }
