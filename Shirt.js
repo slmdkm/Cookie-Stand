@@ -8,16 +8,13 @@ var grandTotals = {
 };
 
 var form = document.getElementById('form');
-var button = document.getElementById('fun-button');
 
 var table = document.getElementById('table');
 var tbody = document.getElementById('table-body');
 var tfoot = document.getElementsByTagName('tfoot')[0];
 
 
-new Item('socks', 8.99);
-new Item('shoes', 49.99);
-new Item('pantaloons', 89.99);
+
 
 function Item(name, price) {
   this.name = name;
@@ -105,10 +102,7 @@ function makeTotalRow() {
   tfoot.appendChild(row);
 }
 
-function handleButtonClick(event) {
-  alert('the button has been clicked. now we are having fun');
-  console.log(event.target);
-}
+
 
 function handleFormSubmit(event) {
   event.preventDefault();
@@ -129,7 +123,7 @@ function handleFormSubmit(event) {
 }
 
 
-button.addEventListener('click', handleButtonClick);
+
 //broadcast
 form.addEventListener('submit', handleFormSubmit);
 
