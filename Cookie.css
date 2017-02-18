@@ -52,11 +52,17 @@ li{
 a {
   padding: 8px 16px;
   color: white;
+  text-decoration: none;
+
 }
 
-link{
-  font-family: ;
-  font-style: ;
+a:hover{
+  background-color: #669999;
+
+}
+#highlight:hover{
+  background-color: #669999;
+
 }
 
 h3{
@@ -192,4 +198,7 @@ footer{
 }*/
 tr.even{
   background-color: #F2F3F4;
+}
+#merchandise{
+  text-align: center;
 }
