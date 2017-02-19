@@ -202,3 +202,27 @@ tr.even{
 #merchandise{
   text-align: center;
 }
+#table{
+  align: center;
+}
+#table-body{
+  align: center;
+}
+#width{
+  /*display: block;*/
+  width: 126%;
+}
+#form{
+  width: 75%;
+  height: 50%;
+}
+#fieldset{
+  width: 126%;
+}
+#test{
+  width: 126%
+}
+#star {
+  width: 112%
+
+}

@@ -4,6 +4,7 @@ var allItems = [];
 var grandTotals = {
   price: 0,
   tax: 0,
+  qty: 0,
   total: 0
 };
 
@@ -16,20 +17,21 @@ var tfoot = document.getElementsByTagName('tfoot')[0];
 
 
 
-function Item(name, price) {
+function Item(name, price, qty) {
   this.name = name;
   this.price = price;
+  this.qty = qty;
   this.tax = 0;
   this.total = 0;
   allItems.push(this);
 }
 
 Item.prototype.calcTax = function() {
-  this.tax = parseFloat((this.price * 0.095).toFixed(2));
+  this.tax = (this.qty *parseFloat((this.price * 0.095).toFixed(2)));
 };
 
 Item.prototype.calcTotal = function () {
-  return this.total = parseFloat((this.price + this.tax).toFixed(2));
+  return this.total = parseFloat(((this.price * this.qty)+ this.tax).toFixed(2));
 };
 
 Item.prototype.updateGrandTotals = function () {
@@ -110,8 +112,9 @@ function handleFormSubmit(event) {
 
   var name = event.target.name.value;
   var price = parseFloat(event.target.price.value);
+  var qty = parseFloat(event.target.qty.value);
 
-  var newItem = new Item(name, price);
+  var newItem = new Item(name, price, qty);
   newItem.doAllTheMethods();
 
   makeItemRow(newItem);
@@ -120,6 +123,7 @@ function handleFormSubmit(event) {
 //associates with html here
   event.target.name.value = null;
   event.target.price.value = null;
+  event.target.qty.value = null;
 }
 
 
