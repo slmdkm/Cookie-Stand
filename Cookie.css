@@ -10,6 +10,7 @@ body{
 }
 
 header{
+
   font-family: 'Caveat Brush', cursive;
   font-weight: ;
   text-align: right;
@@ -21,13 +22,7 @@ header{
   margin: 5px;
   border-top:15px double #0D4D4D;
   border-bottom: 5px solid #0D4D4D;
-
 }
-/*#fixed{*/
-  /*position: fixed;*/
-/*}*/
-
-
 
 h1{
   font-family: 'Caveat Brush', cursive;
@@ -37,36 +32,37 @@ h1{
   margin-right: 50px;
   line-height: 100px;
 
-
-
 }
 ul {
   list-style-type:disc;
 }
+
 li{
   display: inline;
   list-style-type: disc;
-
 }
 .nav-lists{
-font-size: 20px;
-    text-align: right;
-    color: white;
-    float: left;
-    cursor: auto;
+  font-size: 20px;
+  text-align: right;
+  color: white;
+  float: left;
+  cursor: auto;
+}
 
-  }
-  a {
-    padding: 8px 16px;
-    color: white;
-  }
+a {
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
 
 }
 
+a:hover{
+  background-color: #669999;
 
-link{
-  font-family: ;
-  font-style: ;
+}
+#highlight:hover{
+  background-color: #669999;
+
 }
 
 h3{
@@ -74,7 +70,6 @@ h3{
   color: white;
   text-align: right;
   font-size: 33px;
-
 }
 
 h2{
@@ -90,15 +85,14 @@ ul li {
   list-style-type: inside, disc;
 }
 img {
-    display: block;
-    margin: 0px auto;
-
-    width: 400px;
-  }
-  main{
-    margin-right: 250px;
-    margin-top: 50px;
-  }
+  display: block;
+  margin: 0px auto;
+  width: 400px;
+}
+main{
+  margin-right: 250px;
+  margin-top: 50px;
+}
 div{
   align: center;
 
@@ -111,49 +105,41 @@ main{
 #history{
   margin: auto;
   align: center;
-  /*width: 600px;*/
-  /*display: inline-block;*/
   padding: 10px;
   background-color: #002A2A;
-
 }
 #familypic{
-
-  ;
-  /*float:left;*/
   text-align: center;
-
-
 }
+
 p{
   text-align: center;
 }
+
 #fishiespic{
   display: block;
   align: center;
-
   height:150px;
   width: 150px;
   margin-top: 15px;
-padding-top: 15px;
+  padding-top: 15px;
 }
+
 #shirtpic{
   display: block;
   margin-left: 20px;
   height: 150px;
   width: 150px;
 }
+
 #locationandhours{
   display: block;
   margin: 50px 0px;
   align: center;
 
-
 }
 div{
   display: block;
-
-
   padding: 10px;
   background-color: #003333;
   flex:column;
@@ -163,18 +149,23 @@ data{
   color: #002A2A;
 
 }
-table{
+table {
+
   font-family: Avenir;
   margin-top: 25px;
   border-spacing: 5px;
+
 }
+/*table tr.nth-child(odd){
+  background: #F2F3F4;
+}*/
 thead{
   font-weight: : bold;
 }
 td{
   border: 1px solid black
 }
-#inputForm{
+#generateForm{
   margin: 0;
   font-size: 16px
 }
@@ -190,5 +181,24 @@ section{
   align-items: center;
   margin-top: 60px;
   margin-left: 15px;
-  /*justify-content: space-around;*/
+}
+footer{
+  width: 100%;
+  background-color: #669999;
+  display: block;
+  text-align: center;
+  height: 30px;
+}
+/*.tablerows tr.nth-child(odd){
+  background: #F2F3F4;
+
+}
+.tablerows tr.nth-child(even){
+  background:#B2BEB5;
+}*/
+tr.even{
+  background-color: #F2F3F4;
+}
+#merchandise{
+  text-align: center;
 }

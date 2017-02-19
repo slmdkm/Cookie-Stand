@@ -2,7 +2,11 @@
 
 var hours = ["10AM", "11AM","12AM","1PM", "2PM", "3PM","4PM","5PM"];
 
+
+//Get the <table id = "stores"> element
+//Select element and store in var.
 var table = document.getElementById("stores");
+
 var stores =[];
 
 var pikePlace = stores.push(new CookieStoreConstructor('Pike Place', 17, 88, 5.2,'pikeRow'));
@@ -17,6 +21,7 @@ var alki = stores.push(new CookieStoreConstructor('Alki', 3, 24, 2.6,'alkiRow'))
 
 
 //Concstructor Function
+//this keyword is used instead of the object name to indicate that the property or method belongs to the object that this function creates.
 function CookieStoreConstructor(location, min, max, avg, hours, storeRow) {
   this.location = location;
   this.min = min;
@@ -43,13 +48,15 @@ CookieStoreConstructor.prototype.getHourlySales = function (){
 };
 //Prototype is: render equaling the function.
   CookieStoreConstructor.prototype.render = function(){
-    var storeSection = document.getElementById('stores');//table id = stores from HTML
+
+//storing location of 'store'element in the variable storeSsection, the properites and methods of of 'store'element node works on the variable storeSection.Doing this because we are using the element 'store' more than once.(Caching)
+    var storeSection = document.getElementById('stores');//table id = stores from HTML(look through DOM tree for an element who id attribute has a value of 'store')
     var row = document.createElement('tr');//var row - make a new table row
     var td = document.createElement('td');//var td - make a new table cell
     td.innerHTML = this.location;//all the info for this particular store is now appending to table row
     row.appendChild(td);
 
-//innerHTML -adding or removing content from DOM Tree (2nd is Dom Manipulation)
+//innerHTML -adding or removing content from DOM Tree, one property allows access to child element and it's text content (2nd is Dom Manipulation)
 
     for (var i =0; i< this.hourlySales.length; i++){
       var tdHourly =   document.createElement('td');//Create element td node, store in a var
@@ -99,7 +106,7 @@ var clearFields = function(event){
   event.target.avgInput.value = null;
 };
 
-var formEl = document.getElementById("inputForm");
+var formEl = document.getElementById("generateForm");
 formEl.addEventListener("submit", function(event) {
   event.preventDefault();
   var newStoreName = (event.target.storeLocal.value);

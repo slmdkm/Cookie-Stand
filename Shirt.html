@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <title>Salmon Cookies</title>
+  <link
+  href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+  <link rel="stylesheet" href="Cookie.css" type ="text/css">
+  <link href= rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id = "fixed">
+      <nav class="nav-lists">
+        <ul>
+          <li>
+            <a href="CookieHome.html">Home</a>
+          </li>
+          <li>
+            <a href="CookieLocation.html">Location</a>
+          </li>
+          <li>
+            <a href = "CookieSales.html">Sales</a>
+          </li>
+          <li>
+            <a href = "Shirt.html">Place an Order</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="
+      https://github.com/codefellows/seattle-201n7/blob/master/class-06-dom--objects--domain_modeling/lab/assets/salmon.png?raw=true" align = "left">
+      <h1>Pat's Salmon Cookies</h1>
+      <h3> "...an all-time Coffee Confection!"</h3>
+    </header>
+<main
+<div>
+    <h2> Merchandise Order Form</h2>
+    <ul>
+      <li>T-shirts $10.00</li>
+      <li>Mugs $4.00</li>
+      <li>Hats $7.00</li>
+      <li>Stickers $1.00</li>
+      <li>Cookies $3.00</li>
+    </ul>
+  </div>
+
+<div>
+    <form id="form">
+      <fieldset>
+        <legend> Order a T-Shirt!</legend>
+        <!--Non breaking space - a space that will not break into a new line...  -->
+        <!-- <form action = "http://www.example.com/profile.php">
+        <p>What would you like to order?</p>
+        <select name = " items" multiple="multiple">
+        <option value ="T-shirt"selected="selected">T-Shirt</option>
+        <option value ="Mugs"selected="selected">Mugs</option>
+        <option value ="Cookies"selected="selected">Cookies</option>
+        <option value ="Hats"selected="selected">Hats</option> -->
+
+
+        <label for ="name">Item: &nbsp;</label>
+
+        <input type="text" name ="name" required>
+
+        <label for ="price"> Price &nbsp;</label>
+        <input type="number" name = "price" min="0" required>
+
+        <input type="submit" value="Add the item">
+      </fieldset>
+    </form>
+  </div>
+<div>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Tax</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+
+      <tbody id="table-body">
+
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+    </table>
+</div>
+
+</main>
+  <script type="text/javascript" src="Shirt.js"></script>
+
+</body>
+</html>
